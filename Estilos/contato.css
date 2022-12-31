@@ -1,0 +1,164 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+@keyframes fundoAnimado {
+    0% {
+        background-position: 00,00;
+    }
+
+    100% {
+        background-position: 100% 0, 100% 0;
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family:'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #d21617;
+}
+
+#logo {
+    width: 90px;
+    height: auto;
+}
+
+#banner {
+    background-image: url('https://www.xtrafondos.com/wallpapers/the-batman-con-fondo-rojo-6426.jpg');
+    background-position: 50% 50%;
+    background-repeat: repeat-y;
+    animation:fundoAnimado 35s linear infinite;
+    background-size: cover;
+    width: 100%;
+    height: 280px;
+    padding-top: 300px;
+    
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.contato {
+    font-family: 'Kdam Thmor Pro', sans-serif;;
+    width: 100%;
+    max-width: 500px;
+    color: #d21617;
+    font-size: 35px;
+    padding-top: 0px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.field {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid rgb(243, 54, 54);
+    border-radius: 5px;
+    color: #fff;
+    
+}
+
+.field1 {
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    width: 70px;
+    border: 1px solid #d21617;
+    color: #fff;
+    transition: 1s;
+    
+}
+
+.field1:hover {
+    background-color: #d21617;
+    color: black;
+}
+
+.textarea{
+    height: 200px;
+    margin-top: 15px;
+    
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: #fff;
+}
+
+#Ed{
+    color: #d21617;
+   font-family: 'Kdam Thmor Pro', sans-serif;
+   font-weight: bolder;
+}
+
+.footer-navigation{
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px){
+    .footer-navigation{
+        display: block;
+    } 
+    
+    nav {
+        display: none;
+    }
+     
+}
+
+
+

@@ -1,0 +1,164 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color:#fff;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family:'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #d21617;
+}
+
+#logo {
+    width: 90px;
+    height: auto;
+}
+
+
+
+.personagem-cards-containe{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.personagem-container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.personagem {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.personagem:hover{
+    transform: scale(1.02);
+}
+
+.banner-1{
+    background-image: url('https://cf.shopee.com.br/file/c5f8c7137ecc721828d7f12a548c6106');
+    padding: 0px;
+    
+}
+
+.banner-2{
+    background-image: url('https://pbs.twimg.com/media/FMO83fmWYAMYttY?format=jpg&name=900x900');
+    padding: 0px;
+}
+
+.banner-3{
+    background-image: url('https://images.squarespace-cdn.com/content/v1/51b3dc8ee4b051b96ceb10de/07c53b1e-7aee-477d-8d45-c16c080faa75/new-featurette-for-the-batman-offers-additional-details-on-jeffrey-wrights-jim-gordon.jpg');
+    padding: 0px;
+    
+
+}
+
+.banner-4 {
+    background-image: url('https://static.wikia.nocookie.net/the-batman-universe/images/2/29/Riddler_promo_-_The_Batman.jpg/revision/latest?cb=20220209175817');
+    padding: 0px;
+}
+
+.banner-5 {
+    background-image: url('https://prd-rteditorial.s3.us-west-2.amazonaws.com/wp-content/uploads/2022/03/10120300/EWKA_Batman_Spin-Offs4.jpg');
+    padding: 0px;
+    
+}
+
+.banner-6 {
+    background-image: url('https://static.wikia.nocookie.net/the-batman-universe/images/2/24/Alfred_Pennyworth.png/revision/latest?cb=20220216125116');
+    padding: 0px;
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: #fff;
+}
+
+#Ed{
+    color: #d21617;
+   font-family: 'Kdam Thmor Pro', sans-serif;
+   font-weight: bolder;
+}
+
+.footer-navigation{
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px){
+    .footer-navigation{
+        display: block;
+    } 
+    
+    nav {
+        display: none;
+    }
+
+    .personagem{
+        height: 300px;
+    }
+     
+}
